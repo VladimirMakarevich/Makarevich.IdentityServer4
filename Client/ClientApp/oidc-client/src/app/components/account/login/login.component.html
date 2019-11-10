@@ -1,0 +1,50 @@
+<h1>
+  Welcome to Login!
+</h1>
+
+
+<div>
+  <app-input
+    type="text"
+    [control]="signInForm.email"
+    placeholder="Email"
+  >
+  </app-input>
+  <app-input
+    type="text"
+    [control]="signInForm.userName"
+    placeholder="userName">
+  </app-input>
+  <app-input
+    type="password"
+    [control]="signInForm.password"
+    placeholder="Password"
+  >
+  </app-input>
+  <app-input
+    type="checkbox"
+    [control]="signInForm.rememberMe"
+    placeholder="rememberMe"
+  >
+  </app-input>
+  <p>
+    Remember?
+  </p>
+</div>
+
+<button
+  (click)="handleSignIn($event)">
+  Sign In
+</button>
+/
+<button
+  (click)="handleSignUp()">
+  Sign Up
+</button>
+
+<br><br>
+
+<button
+  (submit)="handleGoBack()">
+  Go Back
+</button>
